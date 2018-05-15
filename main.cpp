@@ -8,7 +8,7 @@ using namespace std;
 struct solution
 {
     int w[1001];
-    float PE = 999999;
+    float PE = numeric_limits<float>::max();
 };
 
 
@@ -49,7 +49,7 @@ int main()
     cout << "enter  filename: " ;
     cin >> str1;
 
-    bestSol.PE = 9999999;
+    bestSol.PE = numeric_limits<float>::max();
     int ittt = 20, g_sum = 0;
     while(ittt--)
     {
